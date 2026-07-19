@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:boolean" name="allOrNone"/>
+				<xs:element name="records" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="attributes">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="type"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<!-- Account Fields -->
+							<xs:element type="xs:string" name="AS400_Retailer_Number__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="BillingCity" minOccurs="0"/>
+							<xs:element type="xs:string" name="BillingCountry" minOccurs="0"/>
+							<xs:element type="xs:string" name="BillingPostalCode" minOccurs="0"/>
+							<xs:element type="xs:string" name="BillingState" minOccurs="0"/>
+							<xs:element type="xs:string" name="BillingStreet" minOccurs="0"/>
+							<xs:element type="xs:string" name="Builder_Designation__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Buying_Group__c" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="Cash_Before_Delivery__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Commercial_Designation__c" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="Complete_Delivery__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Credit_Rep_Group_for_Credit_Management__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Delivery_Block__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Delivery_Plant__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Distributor_Name__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Fax" minOccurs="0"/>
+							<xs:element type="xs:string" name="Gd_Receiving_Hr__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Gd_Receiving_Hr_Desc__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="IncoTerm_01__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="IncoTerm_02__c" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="Is_Retailer__c" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="IsActive__c" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="Reason_for_Deactivation__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Name" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="One_Mannington__c" minOccurs="0"/>
+							<xs:element name="Parent" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="SAP_External_Id__c" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element type="xs:string" name="Phenix_owner__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Phone" minOccurs="0"/>
+							<xs:element type="xs:string" name="PP_Customer_Procedure__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Reason_For_Deactivation__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="RecordTypeId" minOccurs="0"/>
+							<xs:element type="xs:string" name="Residential_DM_Name__c" minOccurs="0"/>
+							<xs:element type="xs:decimal" name="Residential_DM_Num__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Residential_DSR_Name__c" minOccurs="0"/>
+							<xs:element type="xs:decimal" name="Residential_DSR_Number__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Residential_GSM_Name__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Residential_Owner__c" minOccurs="0"/>
+							<xs:element type="xs:decimal" name="Residential_Region_Num__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Residential_Sales_Org__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Commercial_Sales_Org__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Residential_Sales_Group_Id__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Residential_Sales_Office_Id__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Sales_District__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Sales_Group_Id__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Sales_Office_Id__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="SAP_5000_ID__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="SAP_Account_Type__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="SAP_External_Id__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="SAP_Sales_Org__c" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="Self_Inspect__c" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="Ship_To__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Shipping_Conditions__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="ShippingCity" minOccurs="0"/>
+							<xs:element type="xs:string" name="ShippingCountry" minOccurs="0"/>
+							<xs:element type="xs:string" name="ShippingPostalCode" minOccurs="0"/>
+							<xs:element type="xs:string" name="ShippingState" minOccurs="0"/>
+							<xs:element type="xs:string" name="ShippingStreet" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="Sold_To__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Terms_of_Payment__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Transportation_Zone__c" minOccurs="0"/>
+							<xs:element type="xs:boolean" name="VIP__c" minOccurs="0"/>
+							<!-- Inspection_Vendor__c Fields -->
+							<xs:element type="xs:string" name="City__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Country__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Email__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="State__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Street_Address__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Vendor_Name__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Vendor_Number__c" minOccurs="0"/>
+							<xs:element type="xs:string" name="Zip__c" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

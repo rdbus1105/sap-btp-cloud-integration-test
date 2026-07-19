@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Account" type="AccountType" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="AccountType">
+		<xs:sequence>
+			<xs:element name="AS400_Retailer_Number__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="BillingCity" type="xs:string" minOccurs="0"/>
+			<xs:element name="BillingCountry" type="xs:string" minOccurs="0"/>
+			<xs:element name="BillingPostalCode" type="xs:string" minOccurs="0"/>
+			<xs:element name="BillingState" type="xs:string" minOccurs="0"/>
+			<xs:element name="BillingStreet" type="xs:string" minOccurs="0"/>
+			<xs:element name="Builder_Designation__c" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="14"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Buying_Group__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Cash_Before_Delivery__c" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="Commercial_Designation__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Complete_Delivery__c" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="Credit_Rep_Group_for_Credit_Management__c" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Delivery_Block__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Delivery_Plant__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Delivery_Route__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Distributor_Name__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Fax" type="xs:string" minOccurs="0"/>
+			<xs:element name="Gd_Receiving_Hr__c" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Gd_Receiving_Hr_Desc__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="IncoTerm_01__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="IncoTerm_02__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="IsActive__c" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="Is_Retailer__c" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="Name" type="xs:string" minOccurs="0"/>
+			<xs:element name="One_Mannington__c" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="ParentId" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="SAP_External_Id__c" type="xs:string" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Phenix_Owner__c" type="SalesforceIdType" minOccurs="0"/>
+			<xs:element name="Phone" type="xs:string" minOccurs="0"/>
+			<xs:element name="PP_Customer_Procedure__c" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Reason_For_Deactivation__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="RecordTypeId" type="SalesforceIdType" minOccurs="0"/>
+			<xs:element name="Residential_DM_Name__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Residential_DM_Num__c" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Residential_DSR_Name__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Residential_DSR_Number__c" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Residential_GSM_Name__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Residential_Owner__c" type="SalesforceIdType" minOccurs="0"/>
+			<xs:element name="Residential_Region_Num__c" type="xs:decimal" minOccurs="0"/>
+			<xs:element name="Sales_District__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Sales_Group_Id__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Sales_Office_Id__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="SAP_5000_ID__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="SAP_Account_Type__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="SAP_External_Id__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="SAP_Sales_Org__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Self_Inspect__c" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="Ship_To__c" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="ShippingCity" type="xs:string" minOccurs="0"/>
+			<xs:element name="ShippingCountry" type="xs:string" minOccurs="0"/>
+			<xs:element name="ShippingPostalCode" type="xs:string" minOccurs="0"/>
+			<xs:element name="ShippingState" type="xs:string" minOccurs="0"/>
+			<xs:element name="ShippingStreet" type="xs:string" minOccurs="0"/>
+			<xs:element name="Shipping_Conditions__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Sold_To__c" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="Terms_of_Payment__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="Transportation_Zone__c" type="xs:string" minOccurs="0"/>
+			<xs:element name="VIP__c" type="xs:boolean" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="SalesforceIdType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z0-9]{15}|[a-zA-Z0-9]{18}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

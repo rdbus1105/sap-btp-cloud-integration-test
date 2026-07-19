@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Sun Jul 19 00:37:16 UTC 2026
+description=Replicate Business Partners (Customers) from SAP S/4HANA to Salesforce as Accounts.
+source=SAPS4HANA
+target=Salesforce

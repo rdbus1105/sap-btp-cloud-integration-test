@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="A_BusinessPartner">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="unbounded" name="A_BusinessPartnerType">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="Customer">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="Supplier">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="false" maxOccurs="1" name="BusinessPartner">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="BusinessPartnerFullName">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="81"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1" name="BusinessPartnerIsBlocked" xmlns=""/>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="BusinessPartnerGrouping">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="4"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1" name="LastChangeDate" xmlns=""/>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_BuPaIdentification">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="A_BuPaIdentificationType">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element nillable="false" maxOccurs="1" name="BPIdentificationType">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="6"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="false" maxOccurs="1" name="BPIdentificationNumber">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="60"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_BusinessPartnerAddress">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="A_BusinessPartnerAddressType">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="CityName">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="40"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="Country">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="3"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PostalCode">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="10"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="Region">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="3"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="HouseNumber">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="10"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="StreetName">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="60"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="CountyCode">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="8"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_FaxNumber">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="A_AddressFaxNumberType">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="FaxNumber">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="30"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_PhoneNumber">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="A_AddressPhoneNumberType">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PhoneNumber">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="30"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_EmailAddress">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="A_AddressEmailAddressType">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="EmailAddress">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="241"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="POBox">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="10"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_BusinessPartnerContact">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="A_BusinessPartnerContactType">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_ContactAddress">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="A_BPContactToAddressType">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="TransportZone">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="10"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="Parent_ID">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_Customer">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" maxOccurs="1" name="A_CustomerType">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element nillable="false" maxOccurs="1" name="Customer">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="10"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="CustomerAccountGroup">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="4"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_CustomerCompany">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="A_CustomerCompanyType">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="PaymentTerms">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="4"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_CustomerSalesArea">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="A_CustomerSalesAreaType">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="CustomerPaymentTerms">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="4"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1" name="CompleteDeliveryIsDefined" xmlns=""/>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="DeliveryIsBlockedForCustomer">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="2"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="CreditControlArea">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="4"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="SupplyingPlant">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="4"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="IncotermsClassification">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="3"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="IncotermsLocation1">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="70"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="CustomerPricingProcedure">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="2"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="SalesGroup">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="3"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="SalesDistrict">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="6"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="SalesOffice">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="4"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="CustomerAccountGroup">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="4"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="ShippingCondition">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="2"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="SalesOrganization">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="4"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="DistributionChannel">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="2"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="Division">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="2"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_PartnerFunction">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="A_CustSalesPartnerFuncType">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element nillable="false" maxOccurs="1" name="Customer">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                                                                <xs:maxLength value="10"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element nillable="false" maxOccurs="1" name="PartnerFunction">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                                                                <xs:maxLength value="2"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="CustomerPartnerDescription">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                                                                <xs:maxLength value="30"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="ContactPerson">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                                                                <xs:maxLength value="10"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="OrderIsBlockedForCustomer">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="2"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="to_CustomerUnloadingPoint">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="A_CustomerUnloadingPointType">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="UnloadingPointName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="25"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="BPGoodsReceivingHoursCode">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="3"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="BusinessPartnerName">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="81"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
