@@ -1,0 +1,5 @@
+#Mon Jun 01 17:25:57 UTC 2026
+Address=outlook.office365.com
+EmailAlertRequired=Yes
+EmaillSubject=Error in CPI \:S4_STP_I_0531_Outlook Mail_To_S4HANA_VIM Invoices
+Environment=Dev
