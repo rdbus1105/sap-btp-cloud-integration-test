@@ -1,5 +1,5 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
+Manifest-Version: 2.0
+Bundle-ManifestVersion: 3
 Bundle-Name: S4_RTR_I_0221_S4HANA_To_BofA_AP Positive Pay File
 Bundle-SymbolicName: S4_RTR_I_0221_S4HANA_To_BofA_AP_Positive_Pay_File
 Bundle-Version: 1.0.7
