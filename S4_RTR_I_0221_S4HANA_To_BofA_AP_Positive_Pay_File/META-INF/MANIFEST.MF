@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: S4_RTR_I_0221_S4HANA_To_BofA_AP Positive Pay File
 Bundle-SymbolicName: S4_RTR_I_0221_S4HANA_To_BofA_AP_Positive_Pay_File
-Bundle-Version: 1.0.6
+Bundle-Version: 1.0.7
 SAP-BundleType: IntegrationFlow
 SAP-NodeType: IFLMAP
 SAP-RuntimeProfile: iflmap
