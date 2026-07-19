@@ -1,0 +1,8 @@
+#
+#Fri Jun 26 15:52:40 UTC 2026
+EmailAlertRequired=Yes
+EmailSubject=Error in CPI QA \: S4_RTR_I_0221_S4Hana_To_BofA_AP PositivePay
+FileName=${property.FileName}_${property.TimeStamp}.pgp
+SourceAddress=elink-sftp-u.bankofamerica.com
+SourceCredential=BOA_B2Bi_SFTP_Cred
+SourceDirectory=/incoming/arp
