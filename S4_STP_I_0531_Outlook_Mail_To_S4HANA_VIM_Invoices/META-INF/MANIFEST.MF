@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: S4_STP_I_0531_Outlook Mail_To_S4HANA_VIM Invoices
 Bundle-SymbolicName: S4_STP_I_0531_Outlook_Mail_To_S4HANA_VIM_Invoices
-Bundle-Version: 1.0.6
+Bundle-Version: 1.0.7
 SAP-BundleType: IntegrationFlow
 SAP-NodeType: IFLMAP
 SAP-RuntimeProfile: iflmap
