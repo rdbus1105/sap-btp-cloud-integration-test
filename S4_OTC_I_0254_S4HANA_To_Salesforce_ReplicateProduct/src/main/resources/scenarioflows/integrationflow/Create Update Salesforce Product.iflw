@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><bpmn2:definitions xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:ifl="http:///com.sap.ifl.model/Ifl.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1">
     <bpmn2:collaboration id="Collaboration_1" name="Default Collaboration">
-        <bpmn2:documentation id="Documentation_1779124629454" textFormat="text/plain">Replicate Materials Master from SAP S/4HANA to Salesforce as Products.</bpmn2:documentation>
+        <bpmn2:documentation id="Documentation_1784423138060" textFormat="text/plain">Replicate Materials Master from SAP S/4HANA to Salesforce as Products.</bpmn2:documentation>
         <bpmn2:extensionElements>
             <ifl:property>
                 <key>namespaceMapping</key>
@@ -130,228 +130,24 @@
         <bpmn2:messageFlow id="MessageFlow_97305133" name="Adapter_Salesforce_WriteProduct2" sourceRef="ServiceTask_97305127" targetRef="Participant_97305132">
             <bpmn2:extensionElements>
                 <ifl:property>
-                    <key>jobResultType</key>
-                    <value>none</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>orderId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectQuery</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>treatNumericAsString</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>processAllBatches</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameRest</key>
-                    <value>customRequest</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>filterFields</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apexMethod</key>
-                    <value>get</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersion</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>uploadFromAttachment</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameJobBulk2</key>
-                    <value>insert</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>streamType</key>
-                    <value>pushTopic</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameSObjectsColletion</key>
-                    <value>create</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>autoPagination</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentSWCVId</key>
-                    <value>1.0.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectName</key>
-                    <value>AcceptedEventRelation</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>queryJobId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>channelNameGenericEvents</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>audience</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectBlobFieldName</key>
-                    <value>Attachment</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>channelNamePlatform</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>httpProtocalForPatchOperaion</key>
-                    <value>default</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>expirationJWT</key>
-                    <value>360</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionsObjectCollection</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>componentVersion</key>
-                    <value>1.1</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customReplay</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>customUrl</key>
-                    <value>/services/data/v58.0/composite/sobjects/Product2/SKU__c</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>system</key>
-                    <value>SFProduct2</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>externalIdFieldNameCreateJobBulk</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectIdName</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>cmdVariantUri</key>
-                    <value>ctype::AdapterVariant/cname::Salesforce/vendor::rojoconsultancy.com/tp::HTTPS/mp::REST/direction::Receiver/version::1.1.32</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>MessageProtocolVersion</key>
-                    <value>1.0.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>responseTimeOut</key>
-                    <value>60000</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>object</key>
-                    <value/>
+                    <key>ComponentType</key>
+                    <value>Salesforce</value>
                 </ifl:property>
                 <ifl:property>
                     <key>Description</key>
                     <value/>
                 </ifl:property>
                 <ifl:property>
-                    <key>operationNameRestBulk</key>
-                    <value>getJob</value>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>filterName</key>
-                    <value/>
+                    <key>Vendor</key>
+                    <value>rojoconsultancy.com</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>invalidReplyIdApproach</key>
-                    <value>none</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>payloadFormat</key>
-                    <value>XML</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>channelNameChangeDataCapture</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentSWCVName</key>
-                    <value>external</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customResponseFormat</key>
-                    <value>application/xml;charset=utf-8</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectFieldsTable</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>waitTimeStream</key>
-                    <value>30000</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>maxMssageEvent</key>
-                    <value>10</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectIdValue</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>maxBufferSize</key>
-                    <value>10485760</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>contentTypeBulk2</key>
-                    <value>CSV</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customSObjectName</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>contentTypeBulkQueryCreate</key>
-                    <value>XML</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>resolveQueryproperty</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>connectionTimeOut</key>
-                    <value>60000</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionBulkApi</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>issuerAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameStreamingReceiver</key>
-                    <value>eventPolling</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>listsObjects</key>
-                    <value/>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
                 </ifl:property>
                 <ifl:property>
                     <key>Name</key>
@@ -362,204 +158,36 @@
                     <value>1.0.0</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>apiVersionBulkApiForJobs2</key>
-                    <value>57.0</value>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>basicCredentialName</key>
-                    <value>{{SFCredentias}}</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>lazyLogin</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>queryLocator</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>contentType</key>
-                    <value>XML</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customPayloadFormat</key>
-                    <value>application/json;charset=utf-8</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customizedRequestHeader</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>accountType</key>
-                    <value>oauthClientCredentials</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>jobId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>nextRecordsUrl</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>oauthCredentialName</key>
-                    <value>{{SFOAuth}}</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectSearch</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>filterValue</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>pkChunkingEnabled</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>keystoreAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>assignmentRuleId</key>
-                    <value/>
+                    <key>system</key>
+                    <value>SFProduct2</value>
                 </ifl:property>
                 <ifl:property>
                     <key>TransportProtocol</key>
                     <value>HTTPS</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>restAPIType</key>
-                    <value>apiREST</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>queryResultsMaxRecords</key>
-                    <value>2000</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customMethod</key>
-                    <value>patch</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>columnDelimiterJobBulk2</key>
-                    <value>COMMA</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>handleXMLNULL</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentNS</key>
-                    <value>sap</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameRestBulk2</key>
-                    <value>getJob</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNamePlaceOrder</key>
-                    <value>addContractOrdersToAccount</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>uploadJobDataFromBody</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>batchId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>queryAll</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>lineEndingBulkJob2</key>
-                    <value>LF</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apexUrl</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionPlaceOrderApi</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionStreaming</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>loginUrl</key>
-                    <value>{{Login URL}}</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>subjectAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>jobType</key>
-                    <value>V2Ingest</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>channelNamePushTopic</key>
-                    <value/>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::Salesforce/vendor::rojoconsultancy.com/tp::HTTPS/mp::REST/direction::Receiver/version::1.1.32</value>
                 </ifl:property>
                 <ifl:property>
                     <key>MessageProtocol</key>
                     <value>REST</value>
                 </ifl:property>
                 <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+                <ifl:property>
                     <key>direction</key>
                     <value>Receiver</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentType</key>
-                    <value>Salesforce</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>prettyPrint</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>resultId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>Vendor</key>
-                    <value>rojoconsultancy.com</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>securityToken</key>
-                    <value>{{SFToken}}</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>allOrNone</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>advanceJobProperties</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameQueryJob2</key>
-                    <value>query</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>contractId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>attachmentName</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionBulkApiForQuery2</key>
-                    <value>57.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>
@@ -830,228 +458,24 @@
         <bpmn2:messageFlow id="MessageFlow_97305167" name="Adapter_Salesforce_WriteSampleProduct_c" sourceRef="ServiceTask_97305163" targetRef="Participant_97305166">
             <bpmn2:extensionElements>
                 <ifl:property>
-                    <key>jobResultType</key>
-                    <value>none</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>orderId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectQuery</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>treatNumericAsString</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>processAllBatches</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameRest</key>
-                    <value>customRequest</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>filterFields</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apexMethod</key>
-                    <value>get</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersion</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>uploadFromAttachment</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameJobBulk2</key>
-                    <value>insert</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>streamType</key>
-                    <value>pushTopic</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameSObjectsColletion</key>
-                    <value>create</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>autoPagination</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentSWCVId</key>
-                    <value>1.0.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectName</key>
-                    <value>AcceptedEventRelation</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>queryJobId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>channelNameGenericEvents</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>audience</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectBlobFieldName</key>
-                    <value>Attachment</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>channelNamePlatform</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>httpProtocalForPatchOperaion</key>
-                    <value>default</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>expirationJWT</key>
-                    <value>360</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionsObjectCollection</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>componentVersion</key>
-                    <value>1.1</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customReplay</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>customUrl</key>
-                    <value>/services/data/v58.0/composite/sobjects/Sample_Product__c/SKU__c</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>system</key>
-                    <value>SFSampleProduct</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>externalIdFieldNameCreateJobBulk</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectIdName</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>cmdVariantUri</key>
-                    <value>ctype::AdapterVariant/cname::Salesforce/vendor::rojoconsultancy.com/tp::HTTPS/mp::REST/direction::Receiver/version::1.1.32</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>MessageProtocolVersion</key>
-                    <value>1.0.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>responseTimeOut</key>
-                    <value>60000</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>object</key>
-                    <value/>
+                    <key>ComponentType</key>
+                    <value>Salesforce</value>
                 </ifl:property>
                 <ifl:property>
                     <key>Description</key>
                     <value/>
                 </ifl:property>
                 <ifl:property>
-                    <key>operationNameRestBulk</key>
-                    <value>getJob</value>
+                    <key>ComponentNS</key>
+                    <value>sap</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>filterName</key>
-                    <value/>
+                    <key>Vendor</key>
+                    <value>rojoconsultancy.com</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>invalidReplyIdApproach</key>
-                    <value>none</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>payloadFormat</key>
-                    <value>XML</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>channelNameChangeDataCapture</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentSWCVName</key>
-                    <value>external</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customResponseFormat</key>
-                    <value>application/xml;charset=utf-8</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectFieldsTable</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>waitTimeStream</key>
-                    <value>30000</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>maxMssageEvent</key>
-                    <value>10</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectIdValue</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>maxBufferSize</key>
-                    <value>10485760</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>contentTypeBulk2</key>
-                    <value>CSV</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customSObjectName</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>contentTypeBulkQueryCreate</key>
-                    <value>XML</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>resolveQueryproperty</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>connectionTimeOut</key>
-                    <value>60000</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionBulkApi</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>issuerAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameStreamingReceiver</key>
-                    <value>eventPolling</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>listsObjects</key>
-                    <value/>
+                    <key>componentVersion</key>
+                    <value>1.1</value>
                 </ifl:property>
                 <ifl:property>
                     <key>Name</key>
@@ -1062,204 +486,36 @@
                     <value>1.0.0</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>apiVersionBulkApiForJobs2</key>
-                    <value>57.0</value>
+                    <key>ComponentSWCVName</key>
+                    <value>external</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>basicCredentialName</key>
-                    <value>{{SFCredentias}}</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>lazyLogin</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>queryLocator</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>contentType</key>
-                    <value>XML</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customPayloadFormat</key>
-                    <value>application/json;charset=utf-8</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customizedRequestHeader</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>accountType</key>
-                    <value>oauthClientCredentials</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>jobId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>nextRecordsUrl</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>oauthCredentialName</key>
-                    <value>{{SFOAuth}}</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>sObjectSearch</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>filterValue</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>pkChunkingEnabled</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>keystoreAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>assignmentRuleId</key>
-                    <value/>
+                    <key>system</key>
+                    <value>SFSampleProduct</value>
                 </ifl:property>
                 <ifl:property>
                     <key>TransportProtocol</key>
                     <value>HTTPS</value>
                 </ifl:property>
                 <ifl:property>
-                    <key>restAPIType</key>
-                    <value>apiREST</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>queryResultsMaxRecords</key>
-                    <value>2000</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>customMethod</key>
-                    <value>patch</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>columnDelimiterJobBulk2</key>
-                    <value>COMMA</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>handleXMLNULL</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentNS</key>
-                    <value>sap</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameRestBulk2</key>
-                    <value>getJob</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNamePlaceOrder</key>
-                    <value>addContractOrdersToAccount</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>uploadJobDataFromBody</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>batchId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>queryAll</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>lineEndingBulkJob2</key>
-                    <value>LF</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apexUrl</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionPlaceOrderApi</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionStreaming</key>
-                    <value>57.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>loginUrl</key>
-                    <value>{{Login URL}}</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>subjectAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>jobType</key>
-                    <value>V2Ingest</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>channelNamePushTopic</key>
-                    <value/>
+                    <key>cmdVariantUri</key>
+                    <value>ctype::AdapterVariant/cname::Salesforce/vendor::rojoconsultancy.com/tp::HTTPS/mp::REST/direction::Receiver/version::1.1.32</value>
                 </ifl:property>
                 <ifl:property>
                     <key>MessageProtocol</key>
                     <value>REST</value>
                 </ifl:property>
                 <ifl:property>
+                    <key>MessageProtocolVersion</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+                <ifl:property>
+                    <key>ComponentSWCVId</key>
+                    <value>1.0.0</value>
+                </ifl:property>
+                <ifl:property>
                     <key>direction</key>
                     <value>Receiver</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentType</key>
-                    <value>Salesforce</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>prettyPrint</key>
-                    <value>0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>resultId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>Vendor</key>
-                    <value>rojoconsultancy.com</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>securityToken</key>
-                    <value>{{SFToken}}</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>allOrNone</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>advanceJobProperties</key>
-                    <value>false</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>operationNameQueryJob2</key>
-                    <value>query</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>contractId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>attachmentName</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>apiVersionBulkApiForQuery2</key>
-                    <value>57.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>
@@ -2240,7 +1496,7 @@ ${body}
                     <value>ctype::FlowstepVariant/cname::GatewayRoute/version::1.0.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97305114_1779124629457" xsi:type="bpmn2:tFormalExpression">count(/A_Product/A_ProductType) &gt; 0</bpmn2:conditionExpression>
+            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97305114_1784423138064" xsi:type="bpmn2:tFormalExpression">count(/A_Product/A_ProductType) &gt; 0</bpmn2:conditionExpression>
         </bpmn2:sequenceFlow>
         <bpmn2:sequenceFlow id="SequenceFlow_97305108" sourceRef="StartEvent_97305106" targetRef="CallActivity_97304931"/>
         <bpmn2:sequenceFlow id="SequenceFlow_97305223" name="Product2Response" sourceRef="ParallelGateway_97305217" targetRef="CallActivity_97305210"/>
@@ -3067,7 +2323,7 @@ ${body}
                     <value>ctype::FlowstepVariant/cname::GatewayRoute/version::1.0.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97305149_1779124629461" xsi:type="bpmn2:tFormalExpression">count(/A_Product/A_ProductType) &gt; 0</bpmn2:conditionExpression>
+            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97305149_1784423138068" xsi:type="bpmn2:tFormalExpression">count(/A_Product/A_ProductType) &gt; 0</bpmn2:conditionExpression>
         </bpmn2:sequenceFlow>
         <bpmn2:sequenceFlow id="SequenceFlow_97305143" sourceRef="StartEvent_97305141" targetRef="CallActivity_97304788"/>
         <bpmn2:sequenceFlow id="SequenceFlow_97305241" name="SampleProduct" sourceRef="ParallelGateway_97305237" targetRef="CallActivity_97305239"/>
@@ -3171,7 +2427,7 @@ ${body}
         </bpmn2:callActivity>
         <bpmn2:startEvent id="StartEvent_97305084" name="Delta">
             <bpmn2:outgoing>SequenceFlow_97305085</bpmn2:outgoing>
-            <bpmn2:timerEventDefinition id="TimerEventDefinition_676981">
+            <bpmn2:timerEventDefinition id="TimerEventDefinition_3907">
                 <bpmn2:extensionElements>
                     <ifl:property>
                         <key>scheduleKey</key>
@@ -3290,7 +2546,7 @@ ${body}
         </bpmn2:callActivity>
         <bpmn2:startEvent id="StartEvent_97305086" name="Adhoc">
             <bpmn2:outgoing>SequenceFlow_97305087</bpmn2:outgoing>
-            <bpmn2:timerEventDefinition id="TimerEventDefinition_410113">
+            <bpmn2:timerEventDefinition id="TimerEventDefinition_365862">
                 <bpmn2:extensionElements>
                     <ifl:property>
                         <key>scheduleKey</key>
@@ -3346,7 +2602,7 @@ ${body}
                 </ifl:property>
                 <ifl:property>
                     <key>loopId</key>
-                    <value>StandardLoopCharacteristics_1779124629461</value>
+                    <value>StandardLoopCharacteristics_1784423138069</value>
                 </ifl:property>
                 <ifl:property>
                     <key>processId</key>
@@ -3376,8 +2632,8 @@ ${body}
             <bpmn2:incoming>SequenceFlow_97305083</bpmn2:incoming>
             <bpmn2:incoming>SequenceFlow_97305051</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_97305081</bpmn2:outgoing>
-            <bpmn2:standardLoopCharacteristics id="StandardLoopCharacteristics_1779124629461" loopMaximum="1000">
-                <bpmn2:loopCondition id="FormalExpression_1779124629461" xsi:type="bpmn2:tFormalExpression">${property.S4Hana.OData.hasMoreRecords} contains 'true'</bpmn2:loopCondition>
+            <bpmn2:standardLoopCharacteristics id="StandardLoopCharacteristics_1784423138069" loopMaximum="1000">
+                <bpmn2:loopCondition id="FormalExpression_1784423138069" xsi:type="bpmn2:tFormalExpression">${property.S4Hana.OData.hasMoreRecords} contains 'true'</bpmn2:loopCondition>
             </bpmn2:standardLoopCharacteristics>
         </bpmn2:callActivity>
         <bpmn2:endEvent id="EndEvent_97305001" name="End 7">
@@ -3557,7 +2813,7 @@ ${body}
                     <value>ctype::FlowstepVariant/cname::GatewayRoute/version::1.0.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97305003_1779124629462" xsi:type="bpmn2:tFormalExpression">${property.Load_Type} = 'Full'</bpmn2:conditionExpression>
+            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97305003_1784423138070" xsi:type="bpmn2:tFormalExpression">${property.Load_Type} = 'Full'</bpmn2:conditionExpression>
         </bpmn2:sequenceFlow>
         <bpmn2:sequenceFlow id="SequenceFlow_97305002" sourceRef="StartEvent_97305000" targetRef="ExclusiveGateway_97304993"/>
         <bpmn2:sequenceFlow id="SequenceFlow_97305078" sourceRef="CallActivity_97305068" targetRef="EndEvent_97305001"/>
@@ -4504,7 +3760,7 @@ ${property.S4Payload}
                     <value>ctype::FlowstepVariant/cname::GatewayRoute/version::1.0.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97304883_1779124629466" xsi:type="bpmn2:tFormalExpression">count(/A_Product/A_ProductType) &gt; 0</bpmn2:conditionExpression>
+            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97304883_1784423138075" xsi:type="bpmn2:tFormalExpression">count(/A_Product/A_ProductType) &gt; 0</bpmn2:conditionExpression>
         </bpmn2:sequenceFlow>
         <bpmn2:sequenceFlow id="SequenceFlow_97305199" name="Full" sourceRef="ExclusiveGateway_97305196" targetRef="CallActivity_97305261">
             <bpmn2:extensionElements>
@@ -4521,7 +3777,7 @@ ${property.S4Payload}
                     <value>ctype::FlowstepVariant/cname::GatewayRoute/version::1.0.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97305199_1779124629466" xsi:type="bpmn2:tFormalExpression">${property.Load_Type} = 'Full'</bpmn2:conditionExpression>
+            <bpmn2:conditionExpression id="FormalExpression_SequenceFlow_97305199_1784423138075" xsi:type="bpmn2:tFormalExpression">${property.Load_Type} = 'Full'</bpmn2:conditionExpression>
         </bpmn2:sequenceFlow>
         <bpmn2:sequenceFlow id="SequenceFlow_97305253" name="Route 1" sourceRef="ExclusiveGateway_97305196" targetRef="CallActivity_97305267">
             <bpmn2:extensionElements>

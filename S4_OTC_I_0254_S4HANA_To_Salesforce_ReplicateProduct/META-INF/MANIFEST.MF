@@ -34,7 +34,7 @@ Import-Package: com.sap.esb.application.services.cxf.interceptor,com.sap
 Origin-Bundle-Name: S4_OTC_I_0254_S4HANA_To_Salesforce_ReplicateProduct
 SAP-RuntimeProfile: iflmap
 Bundle-Name: S4_OTC_I_0254_S4HANA_To_Salesforce_ReplicateProduct
-Bundle-Version: 1.0.19
+Bundle-Version: 1.0.20
 SAP-NodeType: IFLMAP
 Origin-ModifiedDate: 1609250704536
 Import-Service: com.sap.esb.webservice.audit.log.AuditLogger,com.sap.esb
