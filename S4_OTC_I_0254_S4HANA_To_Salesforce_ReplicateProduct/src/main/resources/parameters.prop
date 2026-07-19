@@ -1,0 +1,39 @@
+#
+#Fri Jul 03 23:14:33 UTC 2026
+Adhoc=<row><cell>dateType</cell><cell>SIMPLE</cell></row><row><cell>hourValue</cell><cell>11</cell></row><row><cell>minutesValue</cell><cell>52</cell></row><row><cell>timeType</cell><cell>ON_TIME</cell></row><row><cell>timeZone</cell><cell>( UTC 0\:00 ) Greenwich Mean Time(Etc/GMT)</cell></row><row><cell>throwExceptionOnExpiry</cell><cell>true</cell></row><row><cell>second</cell><cell>0</cell></row><row><cell>minute</cell><cell>0/5</cell></row><row><cell>hour</cell><cell>*</cell></row><row><cell>day_of_month</cell><cell>?</cell></row><row><cell>month</cell><cell>*</cell></row><row><cell>dayOfWeek</cell><cell>*</cell></row><row><cell>year</cell><cell>*</cell></row><row><cell>startAt</cell><cell></cell></row><row><cell>endAt</cell><cell></cell></row><row><cell>attributeBehaviour</cell><cell>isThrowExceptionOnExpiryVisible,isScheduleAdvancedVisible,isScheduleAdvancedStartEndVisible,isScheduleSimpleVisible</cell></row><row><cell>triggerType</cell><cell>cron</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>simple.repeat\=NONE&amp;trigger.timeZone\=Etc/GMT</cell></row>
+AttachmentName=${property.recordName}}.csv
+Authentication=loginPlain
+Credential_Oauth=
+DEV=QA
+Delta_LastModified_LocalVariableEntry=S4_OTC_I_0254_QueryDate
+Email\ To=sap-btp-qa-alerts@mannington.com
+EmailErrorSubject=Error Records in Replicate Product
+EmailSuccessSubject=Success Records in Replicate Product
+Error\ Records=Failed Records
+Error\ in\ CPI\ \:\ S4_OTC_I_0254_S4HANA_To_Salesforce_ReplicateProduct=Error in CPI QA  \: S4_OTC_I_0254_S4HANA_To_Salesforce_ReplicateProduct
+ExceptionLogging=YES
+From=DoNotReply@erp.mannington.com
+Full_Load=<row><cell>dateType</cell><cell>SIMPLE</cell></row><row><cell>hourValue</cell><cell>14</cell></row><row><cell>minutesValue</cell><cell>38</cell></row><row><cell>timeType</cell><cell>ON_TIME</cell></row><row><cell>timeZone</cell><cell>( UTC -5\:00 ) Eastern Standard Time(America/New_York)</cell></row><row><cell>throwExceptionOnExpiry</cell><cell>true</cell></row><row><cell>second</cell><cell>0</cell></row><row><cell>minute</cell><cell>0/5</cell></row><row><cell>hour</cell><cell>*</cell></row><row><cell>day_of_month</cell><cell>?</cell></row><row><cell>month</cell><cell>*</cell></row><row><cell>dayOfWeek</cell><cell>*</cell></row><row><cell>year</cell><cell>*</cell></row><row><cell>startAt</cell><cell></cell></row><row><cell>endAt</cell><cell></cell></row><row><cell>attributeBehaviour</cell><cell>isThrowExceptionOnExpiryVisible,isScheduleAdvancedVisible,isScheduleAdvancedStartEndVisible,isScheduleSimpleVisible</cell></row><row><cell>triggerType</cell><cell>cron</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>simple.repeat\=HOURS&amp;simple.every\=4&amp;trigger.timeZone\=America/New_York</cell></row>
+InitialDate=2026-04-20T00\:00\:00.000
+LogMessageBody=YES
+LogMessageHeader=YES
+LogMessageProperty=YES
+Login\ URL=https\://mannington--staging.sandbox.my.salesforce.com
+Mail_Address=smtp.azurecomm.net\:587
+Mail_Protection=starttls_optional
+Mail_Timeout=30000
+PD_Generic_Error_Handler=/Generic_Error_Handler
+S4_Address=http\://s4hqas.sap.mannington.com\:44300/sap/opu/odata/sap/API_PRODUCT_SRV
+S4_credential=S4_QS4_API_USER
+SAP_Receiver=Salesforce
+SAP_Sender=S4
+SFCredentias=SFDC_QA_BASIC
+SFOAuth=SFDC_QA_OAuth
+SFToken=SFDC_QA_TOKEN
+SalesforceAdhicCustomQuery=sap-client\=120&amp;$filter\=Product eq &apos;52&apos; or Product eq &apos;70&apos; or Product eq &apos;80&apos; or Product eq &apos;313398&apos; or Product eq &apos;361724&apos; or Product eq &apos;423678&apos; or Product eq &apos;440327&apos; or Product eq &apos;600048&apos; or Product eq &apos;536715&apos;
+SalesforceCustomQuery=$filter\=LastChangeDate ge datetime&apos;${property.queryDate}&apos; or CreationDate ge datetime&apos;${property.queryDate}&apos;
+Subject=${header.EmailAlertSubject}
+SuccessRecords=Success Records
+To=${property.EmailTo}
+YES=YES
+credential_Plain=S4_Mail_Generic_Error_Handler

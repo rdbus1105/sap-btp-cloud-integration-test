@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) --><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="allOrNone" type="xs:boolean"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="records">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="1" name="attributes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="1" name="type" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+        <xs:element minOccurs="0" name="Active__c" type="xs:boolean"/>
+        <xs:element minOccurs="0" name="Backorder__c" type="xs:boolean"/>
+        <xs:element minOccurs="0" name="Business_Unit_Code__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="Business_Unit_Desc__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="color_code__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="color_desc__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="CreatedById" type="xs:unsignedLong"/>
+        <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime"/>
+        <xs:element minOccurs="0" name="CurrencyIsoCode" type="xs:string"/>
+        <xs:element minOccurs="0" name="Drop_Date__c" type="xs:date"/>
+        <xs:element minOccurs="0" name="Expected_Ship_Date__c" type="xs:date"/>
+        <xs:element minOccurs="0" name="External_Id__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="LastModifiedById" type="xs:unsignedLong"/>
+        <xs:element minOccurs="0" name="LastModifiedDate" type="xs:dateTime"/>
+        <xs:element minOccurs="0" name="MFG_Pro_Material_Code__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="Name" type="xs:string"/>
+        <xs:element minOccurs="0" name="OwnerId" type="xs:unsignedLong"/>
+        <xs:element minOccurs="0" name="Product_Category__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="Product__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="Profit_Center_Code__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="Profit_Center_Desc__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="size__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="SKU__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="style_code__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="style_desc__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="Style_Name__c" type="xs:string"/>
+        <xs:element minOccurs="0" name="X_Dist_Chain_Status__c" type="xs:string"/>
+      </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Sun Jul 19 01:04:11 UTC 2026
+description=INT 0254 - Replicate Materials Master from SAP S/4HANA to Salesforce as Products.
+source=SAPS4HANA
+target=Salesforce

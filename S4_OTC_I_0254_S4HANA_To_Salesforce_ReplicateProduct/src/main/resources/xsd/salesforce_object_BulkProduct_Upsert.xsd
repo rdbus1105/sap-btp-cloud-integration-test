@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="allOrNone" type="xs:boolean"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="records">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="1" name="attributes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="1" name="type" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Deactivation_Override__c" type="xs:string"/>
+              <xs:element minOccurs="0" name="IsActive" type="xs:string"/>
+              <xs:element minOccurs="0" name="Name" type="xs:boolean"/>
+              <xs:element minOccurs="0" name="SAP_Product_Name__c" type="xs:string"/>
+              <xs:element minOccurs="0" name="Bk__c" type="xs:string"/>
+              <xs:element minOccurs="0" name="Color_Description__c" type="xs:string"/>
+              <xs:element minOccurs="0" name="Size__c" type="xs:string"/>
+              <xs:element minOccurs="0" name="Style_Description__c" type="xs:string"/>
+              <xs:element minOccurs="0" name="SKU__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Division_Code__c" type="xs:string"/>
+              <xs:element minOccurs="0" name="ProductCode" type="xs:string"/> 
+              <xs:element minOccurs="0" name="Product_Category__c" type="xs:string"/>
+              <xs:element minOccurs="0" name="Style__c" type="xs:string"/>
+              <xs:element minOccurs="0" name="Color_Code__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Description" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Quality_Code__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Unit_of_Measurement__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Base_Unit_of_Measure__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Material_Is_Configurable__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Backing_Description__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="MFG_Pro_Material_Code__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Profit_Center_Code__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Profit_Center_Desc__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Business_Unit_Desc__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Drop_Date__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Business_Unit_Code__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Material_Group__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Material_Group_Description__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Material_Class__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="SF_Conversion__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Country_of_Origin__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="B2B_Portal_Catalog_SKU__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="X_Dist_Chain_Status__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Sales_Unit_of_Measure__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="B2B_Product_Sales_UOM_Text__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="B2B_Direct_NonCutFlag__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="B2B_Square_Feet_Per_Carton__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="B2B_Cartons_Per_Pallet__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="B2B_Order_By_Screen_Text__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Max_Roll_Size__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Size_Code__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Bevel__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="Inventory_SKU__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="B2B_Catalog__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="B2B_Category__c" type="xs:string"/>
+			  <xs:element minOccurs="0" name="AtlasMasland_style__c" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
